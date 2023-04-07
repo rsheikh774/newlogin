@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Futuristic Website</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background-image: url('https://media.istockphoto.com/id/1315800229/vector/abstract-futuristic-background-with-hexagons-dark-sci-fi-hi-tech-wallpaper-with-red-lights.jpg?s=612x612&w=0&k=20&c=-Da69_kuP3MDcra60G5P024aOQ59RxeJ0Qdjw1uVXmw=');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            font-family: 'Helvetica Neue', sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        ul{
+            font-family: 'Helvetica Neue', sans-serif;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            border: none;
+            background-color: transparent;
+            margin: 20px;
+            padding: 10px;
+        }
+        ul li{
+            list-style: none;
+        }
+        ul li a{
+            font-size: 25px;
+            font-weight: 700;
+            text-decoration: none;
+            text-transform: uppercase;
+            color: #fff;
+            padding: 15px 20px;
+            border: 2px solid #fff;
+            border-radius: 30px;
+            transition: 0.7s ease-in-out;
+            letter-spacing: 1px;
+        }
+        ul:hover li a{
+            color: #30edf4;
+            background-color: #fff;
+            border-color: #30edf4;
+            box-shadow: 0px 0px 20px #30edf4;
+            transform: translateY(-5px);
+        }
+        ul:hover li a:not(:hover){
+            color: #fff;
+            opacity: 0.7;
+            filter: blur(1px);
+            border-color: #fff;
+        }
+        @media (max-width: 768px) {
+            ul{
+                margin: 10px;
+                padding: 5px;
+                gap: 10px;
+            }
+            ul li a{
+                font-size: 20px;
+                padding: 10px 15px;
+                border-radius: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="./login.html">Login</a></li>
+        <li><a href="#">Learn more</a></li>
+    </ul>
+</body>
+</html>
